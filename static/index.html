@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Basit HTTP Sunucusu</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <h1>Merhaba!</h1>
+  <p>Bu, Python ile yazılmış basit bir HTTP sunucusundan sunulan statik bir HTML sayfasıdır.</p>
+  <script>
+    fetch('/api/hello')
+      .then(res => res.json())
+      .then(data => {
+        const el = document.createElement('pre');
+        el.textContent = JSON.stringify(data, null, 2);
+        document.body.appendChild(el);
+      })
+      .catch(console.error);
+  </script>
+</body>
+</html>
