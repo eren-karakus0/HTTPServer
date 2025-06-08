@@ -11,7 +11,6 @@ Bu proje, Python ile sıfırdan geliştirilmiş, Docker ile containerize edilebi
 - MIME tipi yönetimi  
 - Çoklu bağlantı desteği (threading)  
 - 404, 500, 501 hata kodları  
-- İstekleri `server.log` dosyasına yazar  
 
 ## Kurulum
 
